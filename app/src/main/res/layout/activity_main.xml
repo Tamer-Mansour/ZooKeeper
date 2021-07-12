@@ -9,8 +9,8 @@
 
     <EditText
         android:id="@+id/etFly"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="316dp"
+        android:layout_height="96dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
@@ -22,8 +22,8 @@
 
     <EditText
         android:id="@+id/etGorilla"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="304dp"
+        android:layout_height="109dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"

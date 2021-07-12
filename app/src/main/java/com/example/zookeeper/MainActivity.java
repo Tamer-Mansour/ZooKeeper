@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    EditText etFly,etGorilla;
+    EditText etFly, etGorilla;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,16 +16,6 @@ public class MainActivity extends AppCompatActivity {
         etFly = findViewById(R.id.etFly);
         etGorilla = findViewById(R.id.etGorilla);
 
-        Gorilla g = new Gorilla("",100);
-        g.throwSomething();
-        g.throwSomething();
-        g.throwSomething();
-        g.eatBananas();
-        g.eatBananas();
-        g.climb();
-
-        etGorilla.setText(""+ g.toString());
-
         Bat t = new Bat();
         t.attackTown();
         t.attackTown();
@@ -33,8 +23,23 @@ public class MainActivity extends AppCompatActivity {
         t.eatHumans();
         t.eatHumans();
         t.fly();
-        etFly.setText(""+ t.toString());
+        etFly.setText("Bird" + t.toString());
+//        etFly.setText("Bird" + t.eatHumans());
+//        etFly.setText("Bird" + t);
+//        etFly.setText("Bird" + t.fly());
 
+        Gorilla g = new Gorilla(95);
+        g.throwSomething();
+        g.throwSomething();
+        g.throwSomething();
+        g.eatBananas();
+        g.eatBananas();
+        g.climb();
+
+//        etGorilla.setText("Gorilla" + g);
+//        etGorilla.setText("Gorilla" + g.throwSomething());
+//        etGorilla.setText("Gorilla" + g.eatBananas());
+        etGorilla.setText("" + g.toString());
 
 
     }

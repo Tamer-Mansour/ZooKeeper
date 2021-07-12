@@ -2,19 +2,24 @@ package com.example.zookeeper;
 
 class Gorilla extends Mammal {
 
-    public Gorilla(String name, int energyLevel) {
-        super(name, energyLevel);
+    public Gorilla(int energyLevel) {
+        super(energyLevel);
     }
 
-    public void throwSomething(){
-        energyLevel+=5;
+
+    public int throwSomething(){
+        return energyLevel+=5;
     }
-    public void eatBananas(){
-        energyLevel+=10;
+    public int eatBananas(){
+       return energyLevel+=10;
 
     }
-    public void climb(){
-        energyLevel-=10;
+    public int climb(){
+        return energyLevel-=10;
     }
-    
+
+    @Override
+    public String toString() {
+        return   "The final energy is : " + energyLevel ;
+    }
 }

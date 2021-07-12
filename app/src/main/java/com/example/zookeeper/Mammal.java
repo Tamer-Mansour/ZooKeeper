@@ -1,10 +1,9 @@
 package com.example.zookeeper;
 
-public class Mammal extends Animal {
-    int energyLevel;
+public class Mammal  {
+    int energyLevel = 100;
 
-    public Mammal(String name,int energyLevel) {
-        super(name);
+    public Mammal(int energyLevel) {
         this.energyLevel=energyLevel;
     }
 

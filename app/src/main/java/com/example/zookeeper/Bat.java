@@ -1,7 +1,8 @@
 package com.example.zookeeper;
 
-public class Bat {
-    int energyLevel = 100;
+public class Bat  {
+    int energyLevel = 300;
+
 
     public int fly(){
         return  energyLevel-=50;
@@ -15,6 +16,5 @@ public class Bat {
     public String toString(){
         return  ("The final energy is : " + energyLevel);
     }
-
 }
 
